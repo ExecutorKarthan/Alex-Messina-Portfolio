@@ -1,0 +1,29 @@
+/*Clear previous formatting to allow for granular control and set a background for the page*/
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: plum;
+    box-sizing: border-box;
+}
+
+/*Enable flex to better stack elements and make it mobile accessible*/
+body{
+    
+}
+
+/*Add flex and wrap to the header to put it on one line*/
+header{
+    display: flex;
+    flex: wrap;
+}
+
+/*Add spacing to prevent cramming*/
+h1, nav{
+    padding: 50px;
+    border: 50px;
+    margin: 50px;
+}
+
+
+
+
