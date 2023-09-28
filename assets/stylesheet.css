@@ -12,18 +12,88 @@ body{
 }
 
 /*Add flex and wrap to the header to put it on one line*/
-header{
+header, nav{
     display: flex;
-    flex: wrap;
+    justify-content: space-between;
+    padding-top: 0%;
 }
 
 /*Add spacing to prevent cramming*/
-h1, nav{
-    padding: 50px;
-    border: 50px;
-    margin: 50px;
+h1 {
+    padding: 1%;
+    margin: 0%;
+    justify-content: flex-start;
 }
 
+nav {
+    padding-left: 0;
+    min-width: 400px;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.navLink{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-left: 5%; 
+    padding-top: 5%;
+}
 
+hr{
+    display: block;
+}
 
+h3, #contactMe,footer{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    background-color: silver;
+    padding: 0.5%;
+}
+
+.contactLinks {
+    min-width: 400px;
+    padding: 1%;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+img{
+    width: auto;
+    height: 150px;
+}
+
+.emailToolTip:hover::after, .githubToolTip:hover::after, .linkedInToolTip:hover::after{
+    position: absolute;
+    max-width: 200px;
+    border: 1px black solid;
+    background-color:black;
+    padding: 12px;
+    color: whitesmoke;
+    font-size: 100%;
+}
+
+.emailToolTip:hover::after{
+    content:"Click here to contact me by email.";
+}
+
+.githubToolTip:hover::after{
+    content:"Click here to view my code repositories, including personal projects.";
+}
+
+.linkedInToolTip:hover::after{
+    content:"Click here to connect via LinkedIn and to see my profile.";
+}
+
+@media screen and (max-width: 760px) {
+    header, .link{
+        flex-direction: column;
+    }
+    
+}
