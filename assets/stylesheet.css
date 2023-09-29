@@ -6,11 +6,6 @@
     box-sizing: border-box;
 }
 
-/*Enable flex to better stack elements and make it mobile accessible*/
-body{
-    
-}
-
 /*Add flex and wrap to the header to put it on one line*/
 header, nav{
     display: flex;
@@ -55,23 +50,84 @@ h3{
     padding: 0.5%;
 }
 
+.aboutMe{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe h2, .aboutMe img{
+    width: 400px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.meImageAndHeading, .meParagraph{
+    padding: 1%;
+}
+
+.workProducts h2{
+    width: 400px;
+    text-align: center;
+    padding-top: 25%;
+}
+
+#profilePic{
+    width: auto;
+    height: 400px;
+    padding-left: 1%;
+}
+
+.meParagraph{
+    padding-top: 4%;
+    text-align: center;
+}
+
+.workProducts{
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.boxPallet{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.workBox{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2%;   
+}
+
+.workImage{
+ width: 400px;  
+   
+}
+
 .contactLinks {
     min-width: 400px;
-    padding: 1%;
+    padding-right: 3%;
     margin: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-img{
+.contactImage{
     width: auto;
     height: 150px;
+    padding-left: 1%;
 }
 
 .emailToolTip:hover::after, .githubToolTip:hover::after, .linkedInToolTip:hover::after{
     position: absolute;
-    max-width: 200px;
+    max-width: 100px;
     border: 1px black solid;
     background-color:black;
     padding: 12px;
@@ -92,7 +148,7 @@ img{
 }
 
 @media screen and (max-width: 760px) {
-    header, .link{
+    header, .workBox{
         flex-direction: column;
     }
     
