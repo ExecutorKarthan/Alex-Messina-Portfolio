@@ -4,6 +4,8 @@
     margin: 0px;
     background-color: plum;
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
 }
 
 /*Add flex and wrap to the header to put it on one line*/
@@ -17,7 +19,7 @@ header, nav{
 h1 {
     padding: 1%;
     margin: 0%;
-    justify-content: flex-start;
+    font-size: 50px;
 }
 
 nav {
@@ -25,8 +27,7 @@ nav {
     min-width: 400px;
     margin: 1%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .navLink{
@@ -35,62 +36,66 @@ nav {
     text-align: left;
     padding-left: 5%; 
     padding-top: 5%;
+    color: black;
+    font-size: 32px;
 }
 
 hr{
     display: block;
 }
 
-h3, #contactMe,footer{
+h3, h2,  #contactMe,footer{
     display: flex;
     justify-content: center;
+    font-size:x-large;
 }
+
 h3{
     background-color: silver;
-    padding: 0.5%;
+    padding: 1%;
+    font-size: 32px;
 }
 
 .aboutMe{
-    display: flex;
-    justify-content: center;
-}
-
-.aboutMe h2, .aboutMe img{
-    width: 400px;
-    text-align: center;
-    padding-top: 10%;
-}
-
-.meImageAndHeading, .meParagraph{
-    padding: 1%;
-}
-
-.workProducts h2{
-    width: 400px;
-    text-align: center;
-    padding-top: 25%;
-}
-
-#profilePic{
-    width: auto;
-    height: 400px;
-    padding-left: 1%;
-}
-
-.meParagraph{
-    padding-top: 4%;
-    text-align: center;
-}
-
-.workProducts{
-    padding-top: 5%;
+    padding-top: 1.5%;
+    margin: 1%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+#aboutMe{
+    min-width: 400px;
+    text-align: left;
+    font-size: 32px;
+    padding-top: 15%;
+}
 
+#profilePic{
+    max-width: 1000px;
+    max-height: auto;
+    padding: 2%;
+}
+
+.meParagraph{
+    padding-top: 4%;
+    text-align: center;
+    width: 500px;
+}
+
+.workSection{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#workProducts{
+    width: 400px;
+    text-align: center;
+    padding-top: 15%;
+}
 
 .boxPallet{
     display: flex;
@@ -105,9 +110,8 @@ h3{
     margin: 2%;   
 }
 
-.workImage{
- width: 400px;  
-   
+h4, .workImage{
+    max-width: 700px;  
 }
 
 .contactLinks {
@@ -147,9 +151,29 @@ h3{
     content:"Click here to connect via LinkedIn and to see my profile.";
 }
 
-@media screen and (max-width: 760px) {
-    header, .workBox{
-        flex-direction: column;
+@media screen and (min-width: 760px) {
+    nav{
+        min-width: 800px;
+        flex-direction: row;
     }
-    
+
+    .meParagraph{
+        width: 700px;
+    }
+
+    .workImage, h4{
+        width: 400px;  
+    }
+
+    #workProducts{
+        min-width: 250px;
+        text-align: center;
+        font-size: 32px;
+        padding-top: 10%;
+    }
+
+    .boxPallet{
+        width:75%;
+    }
+
 }
