@@ -1,4 +1,4 @@
-/*Clear previous formatting to allow for granular control and set a background for the page*/
+/*Clear previous formatting to allow for granular control and set a background for the page.*/
 *{
     padding: 0px;
     margin: 0px;
@@ -8,56 +8,56 @@
     font-size: 40px;
 }
 
-/*Add flex and wrap to the header to put it on one line*/
-header, nav{
+/*Make the header a flex box with two other flex boxes in it - one containing the headline name and the other a box to hold the navigation links. 
+This is done to allow the navigation links to collapse under the portfolio title name.*/
+header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding-top: 0%;
 }
 
-/*Add spacing to prevent cramming*/
+/*Formate the elements of the heard to be ascetically pleasing.*/
 h1 {
     padding: 1%;
     margin: 0%;
-    font-size: 50px;
+    font-size: 150%;
+    text-align: center;
 }
 
 nav {
     padding-left: 0;
-    min-width: 400px;
     margin: 1%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.navLink{
-    display:flex;
-    flex-wrap: wrap;
-    text-align: left;
+.navLink{ 
+    width: 40%;
+    text-align: center;
     padding-left: 5%; 
     padding-top: 5%;
     color: black;
-    font-size: 32px;
-}
-
-hr{
-    display: block;
+    font-size: 75%;
 }
 
 h3, h2,  #contactMe,footer{
     display: flex;
     justify-content: center;
-    font-size:x-large;
+    font-size:150%;
 }
 
+/*Create a stylized break to separate the header/navigation links from the main body of the webpage.*/
 h3{
     background-color: silver;
+    margin-top: 5%;
     padding: 1%;
-    font-size: 32px;
+    font-size: 75%;
 }
 
+/*Create a series of flexboxes to help the "about me" elements so they will collapse or expand as the page changes size. */
 .aboutMe{
-    padding-top: 1.5%;
+    padding-top: 1%;
     margin: 1%;
     display: flex;
     flex-wrap: wrap;
@@ -65,15 +65,15 @@ h3{
     justify-content: space-evenly;
 }
 
+/*Stylize the "About me" section of the page.*/
 #aboutMe{
     min-width: 400px;
     text-align: left;
-    font-size: 32px;
-    padding-top: 15%;
+    padding-top: 5%;
 }
 
 #profilePic{
-    max-width: 1000px;
+    max-width: 100%;
     max-height: auto;
     padding: 2%;
 }
@@ -81,9 +81,10 @@ h3{
 .meParagraph{
     padding-top: 4%;
     text-align: center;
-    width: 500px;
+    width: 100%;
 }
 
+/*Create a series of flexboxes to help the "works" elements so they will collapse or expand as the page changes size. */
 .workSection{
     display: flex;
     flex-wrap: wrap;
@@ -92,9 +93,9 @@ h3{
 }
 
 #workProducts{
-    width: 400px;
+    width: 75%;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .boxPallet{
@@ -103,19 +104,27 @@ h3{
     flex-direction: row;
 }
 
+/*Stylize the "Work" section of the page, where someone can view my future completed coding projects.*/
 .workBox{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2%;
-    margin: 2%;   
+    margin: 2%; 
+    width: 40%;  
 }
 
 h4, .workImage{
-    max-width: 700px;  
+    max-width: 50%;  
 }
 
+#firstProject{
+    width: 150%;  
+}
+
+/*Create flexboxes and stylize the "Contact me" section of the page.*/
 .contactLinks {
-    min-width: 400px;
+    min-width: 100%;
     padding-right: 3%;
     margin: 1%;
     display: flex;
@@ -129,12 +138,13 @@ h4, .workImage{
     padding-left: 1%;
 }
 
-.emailToolTip:hover::after, .githubToolTip:hover::after, .linkedInToolTip:hover::after{
+/*Create a hover tooltip that explains what clicking each "contact me" icon will link to.*/
+.emailToolTip:hover::after, .githubToolTip:hover::after, .linkedInToolTip:hover::before{
     position: absolute;
-    max-width: 100px;
+    max-width: 100%;
     border: 1px black solid;
     background-color:black;
-    padding: 12px;
+    padding: 1%;
     color: whitesmoke;
     font-size: 100%;
 }
@@ -147,33 +157,66 @@ h4, .workImage{
     content:"Click here to view my code repositories, including personal projects.";
 }
 
-.linkedInToolTip:hover::after{
+.linkedInToolTip:hover::before{
     content:"Click here to connect via LinkedIn and to see my profile.";
 }
 
+/*Add media rules to reformat the webpage to respond to different user window sizes*/
 @media screen and (min-width: 760px) {
-    nav{
-        min-width: 800px;
+    header{
         flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    h1{
+        font-size: 185%;        
+    }
+    
+    nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 28%;
+    }
+
+    .navLink{       
+        font-size: 100%;
+        width: fit-content;
+    }
+
+    h3{
+        margin: 0%;
+        font-size: 125%;
+    }
+
+    h2{
+        align-items: center;
+        font-size: 150%;
+    }
+
+    #profilePic{
+        max-width: 30%;
     }
 
     .meParagraph{
-        width: 700px;
-    }
-
-    .workImage, h4{
-        width: 400px;  
+        width: 40%;
+        font-size: 150%;
     }
 
     #workProducts{
-        min-width: 250px;
+        width: 15%;
         text-align: center;
-        font-size: 32px;
-        padding-top: 10%;
+        align-items: center;
+        font-size: 150%;
+        margin: 4%;
+        padding: 4.5%;
+        padding-right: 7%;
     }
 
     .boxPallet{
         width:75%;
     }
 
+    .workBox{
+        width: 40%;
+    }
 }
