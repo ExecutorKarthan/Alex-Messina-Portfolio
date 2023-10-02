@@ -20,7 +20,7 @@ header {
 h1 {
     padding: 1%;
     margin: 0%;
-    font-size: 150%;
+    font-size: 125%;
     text-align: center;
 }
 
@@ -30,12 +30,12 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .navLink{ 
-    width: 40%;
+    width: 100%;
     text-align: center;
-    padding-left: 5%; 
     padding-top: 5%;
     color: black;
     font-size: 75%;
@@ -53,6 +53,7 @@ h3{
     margin-top: 5%;
     padding: 1%;
     font-size: 75%;
+    text-align: center;
 }
 
 /*Create a series of flexboxes to help the "about me" elements so they will collapse or expand as the page changes size. */
@@ -85,7 +86,7 @@ h3{
 }
 
 /*Create a series of flexboxes to help the "works" elements so they will collapse or expand as the page changes size. */
-.workSection{
+.workSection, .boxPallet{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -98,28 +99,28 @@ h3{
     padding-top: 10%;
 }
 
-.boxPallet{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
 /*Stylize the "Work" section of the page, where someone can view my future completed coding projects.*/
 .workBox{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 2%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
     margin: 2%; 
     width: 40%;  
 }
 
-h4, .workImage{
-    max-width: 50%;  
+h4, .workImage{   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;  
+    font-size: 45%;
 }
 
 #firstProject{
-    width: 150%;  
+    padding-top: 5%;
+    width: 100%;
 }
 
 /*Create flexboxes and stylize the "Contact me" section of the page.*/
@@ -140,13 +141,13 @@ h4, .workImage{
 
 /*Create a hover tooltip that explains what clicking each "contact me" icon will link to.*/
 .emailToolTip:hover::after, .githubToolTip:hover::after, .linkedInToolTip:hover::before{
-    position: absolute;
+    position:absolute;
     max-width: 100%;
     border: 1px black solid;
     background-color:black;
     padding: 1%;
     color: whitesmoke;
-    font-size: 100%;
+    font-size: 50%;
 }
 
 .emailToolTip:hover::after{
@@ -169,18 +170,19 @@ h4, .workImage{
     }
     
     h1{
-        font-size: 185%;        
+        font-size: 155%;        
     }
     
     nav{
         flex-direction: row;
         flex-wrap: wrap;
-        width: 28%;
+        width: 40%;
     }
 
     .navLink{       
-        font-size: 100%;
+        font-size: 80%;
         width: fit-content;
+        padding: 3%;
     }
 
     h3{
@@ -208,7 +210,7 @@ h4, .workImage{
         align-items: center;
         font-size: 150%;
         margin: 4%;
-        padding: 4.5%;
+        padding: 1%;
         padding-right: 7%;
     }
 
@@ -217,6 +219,20 @@ h4, .workImage{
     }
 
     .workBox{
+        width: 25%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #firstProject img{
         width: 40%;
+    }
+
+    #firstProject h4{
+        padding-right: 1%;
+    }
+    
+    #contactMe{
+        padding-top: 5%;
     }
 }
