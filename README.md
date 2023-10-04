@@ -17,7 +17,7 @@ This is a portfolio page that I devised to showcase my work and provide an easy 
 N/A
 
 ## How to Use this Project
-This website serves as an introduction of me to any potential employer, offering easy navigation and access to pertinent professional information. Through its navigation, potential employers can download a current resume, learn a little bit about me, look at my completed programming projects as well as contact me via email or LinkedIn. They can also see my Github repository tyo view projects that are less than or not graphical. 
+This website serves as an introduction of me to any potential employer, offering easy navigation and access to pertinent professional information. Through its navigation, potential employers can download a current resume, learn a little bit about me, look at my completed programming projects as well as contact me via email or LinkedIn. They can also see my Github repository to view projects that are less than or not graphical. 
 
 ## Credits
 All the code on this website are of my own devising and I have not use any outside code contributions. The Codeforge 2.png image was created by the Canva text to image AI feature
