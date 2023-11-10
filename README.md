@@ -2,13 +2,13 @@
 
 ## Live Project
 https://executorkarthan.github.io/Alex-Messina-Portfolio/
-![Alt text](fullPageLayout1.png)
-![Alt text](fullPageLayout2.png)
-![Alt text](fullPageLayout3.png)
-![Alt text](mobileLayout1.png)
-![Alt text](mobileLayout2.png)
-![Alt text](mobileLayout3.png)
-![Alt text](mobileLayout4.png)
+![Alt text](./assets/fullPageLayout1.png)
+![Alt text](./assets/fullPageLayout2.png)
+![Alt text](./assets/fullPageLayout3.png)
+![Alt text](./assets/mobileLayout1.png)
+![Alt text](./assets/mobileLayout2.png)
+![Alt text](./assets/mobileLayout3.png)
+![Alt text](./assets/mobileLayout4.png)
 
 ## Description
 This is a portfolio page that I devised to showcase my work and provide an easy means for people to contact me professionally. I really learned a lot about flexboxes, specifically how they can be used as a series of nested containers to obtain ideal formatting. I learned how to add hoverable tooltips and that I can use images to create icon-based links instead of using text anchors. I also used this opportunity to learn how @media to create a responsive webpage that adjusted for user screen size changes. 
