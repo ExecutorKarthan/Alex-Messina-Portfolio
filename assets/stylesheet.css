@@ -41,7 +41,7 @@ nav {
     font-size: 75%;
 }
 
-h3, h2,  #contactMe,footer{
+h3, #contactMe,footer{
     display: flex;
     justify-content: center;
     font-size:150%;
@@ -50,7 +50,8 @@ h3, h2,  #contactMe,footer{
 /*Create a stylized break to separate the header/navigation links from the main body of the webpage.*/
 h3{
     background-color: silver;
-    margin-top: 5%;
+    padding-top: 3%;
+    margin-top: 2%;
     padding: 1%;
     font-size: 75%;
     text-align: center;
@@ -58,31 +59,33 @@ h3{
 
 /*Create a series of flexboxes to help the "about me" elements so they will collapse or expand as the page changes size. */
 .aboutMe{
-    padding-top: 1%;
-    margin: 1%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    width: 100%;
+    margin: 1%;  
 }
 
 /*Stylize the "About me" section of the page.*/
-#aboutMe{
-    min-width: 400px;
+#title{
+    min-width: 5%;
     text-align: left;
     padding-top: 5%;
 }
 
 #profilePic{
-    max-width: 100%;
+    max-width: 500px;
+    width:100%;
+    float:right;
     max-height: auto;
     padding: 2%;
 }
 
 .meParagraph{
+    width: 50%;
     padding-top: 4%;
-    text-align: center;
+    text-align: justify;
     width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: small;
 }
 
 /*Create a series of flexboxes to help the "works" elements so they will collapse or expand as the page changes size. */
@@ -94,9 +97,10 @@ h3{
 }
 
 #workProducts{
-    width: 75%;
+    width: 100%;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 3%;
+    padding-left: 30%;
 }
 
 /*Stylize the "Work" section of the page, where someone can view my future completed coding projects.*/
@@ -128,9 +132,15 @@ h4, .workImage{
     min-width: 100%;
     padding-right: 3%;
     margin: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    place-items:center;
+    
+}
+
+#email, #gitHub, #linkedIn {
+    display: grid;
+    place-items:center;
+    text-align: center;
 }
 
 .contactImage{
@@ -139,8 +149,13 @@ h4, .workImage{
     padding-left: 1%;
 }
 
+.contactLink{
+    font-size: 18px;
+    color: black;
+}
+
 /*Create a hover tooltip that explains what clicking each "contact me" icon will link to.*/
-.emailToolTip:hover::after, .githubToolTip:hover::after, .linkedInToolTip:hover::before{
+.emailToolTip:hover::after, .githubToolTip:hover::after, .linkedInToolTip:hover::after{
     position:absolute;
     max-width: 100%;
     border: 1px black solid;
@@ -158,7 +173,7 @@ h4, .workImage{
     content:"Click here to view my code repositories, including personal projects.";
 }
 
-.linkedInToolTip:hover::before{
+.linkedInToolTip:hover::after{
     content:"Click here to connect via LinkedIn and to see my profile.";
 }
 
@@ -196,7 +211,7 @@ h4, .workImage{
     }
 
     #profilePic{
-        max-width: 30%;
+        max-width: 500px;
     }
 
     .meParagraph{
@@ -210,8 +225,6 @@ h4, .workImage{
         align-items: center;
         font-size: 150%;
         margin: 4%;
-        padding: 1%;
-        padding-right: 7%;
     }
 
     .boxPallet{

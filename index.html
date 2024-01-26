@@ -3,8 +3,9 @@
     <!--Create a head that has a title for the page, as well as links to the correct CSS file for styling-->
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="assets/stylesheet.css">
         <title>Alex Messina Portfolio Page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/stylesheet.css">
     </head>
     <body>
         <!--Welcome the visitor and provide links to places in the portfolio page, including ways to contact me, examples of work as well as my work history-->
@@ -20,53 +21,111 @@
         <main>
             <h3>Welcome to the portfolio page of Alex Messina (He/Him)</h3>
             <!--Provide a description of who I am (personal statement)-->          
-            <section class="aboutMe">
-                <h2 id="aboutMe">About me</h2>
-                <img id="profilePic" src="assets/JapanSelfie.png" alt="This is a photo of a man in a blue kimono surrounded by hanging japanese flowers.">
-                <div class= "meParagraph">
-                    <p>Hello! My name is Alex Messina and I am an inquisitive, life-long learner that enjoys exploring challenges.
-                        I am a firm believer in honest self-reflection as a path to improvement and view criticism as an opportunity to engage in that self-reflection.
-                        I think that collaboration is the ideal tool to produce the best quality product as it allows for a larger body of knowledge and unique perspectives to be applied to the problem in question. 
-                        <br>
-                        <br>
-                        I tend to spend my free time programming to help someone make a repetitive, tedious task doable faster. 
+            <section class="containerifluid aboutMe">
+                <div class="row">
+                    <h2 class ="text-center" id="aboutMe">About me</h2>
+                    <p class="text-wrap">
+                        <img class="float-end" id="profilePic" src="assets/JapanSelfie.png" alt="This is a photo of a man in a blue kimono surrounded by hanging japanese flowers.">
+                        Hello! My name is Alex Messina and I am an inquisitive, life-long learner that enjoys exploring challenges.
+                        I am a firm believer in honest self-reflection as a path to improvement and view criticism as an opportunity to engage in that 
+                        self-reflection. I think that collaboration is the ideal tool to produce the best quality product as it allows for a larger body 
+                        of knowledge and unique perspectives to be applied to the problem in question. 
+                    </p>
+                </div>
+                <div class= "row">
+                    <p> I tend to spend my free time programming to help someone make a repetitive, tedious task doable faster. At the moment, I do not have much 
+                        free time as I am currently working toward completing my Web Developer Boot Camp through Washington University - St. Louis. I have leveraged 
+                        what I am learning to produce the projects that you see below, as well as more you can find on my GithHub page.
                     </p>
                 </div>
             </section>
             <!-- Create a section to exhibit my different work products-->
-            <section class="workSection">
-                <h2 id="workProducts">Work products</h2>
-                <section class="boxPallet">
-                    <div class="workBox" id="firstProject">
-                        <a href="https://executorkarthan.github.io/5-day-forecast/"> <img class="workImage" src="./assets/5-day-Forecast Demo.gif" alt="This is a gif showing the responsive quiz I built"></a>
-                        <h4>This is a forecast app. It will provide the current and future weather conditions for a location.</h4>
+            <section class="containerifluid ">
+                <section class="row">
+                    <div class="col text-center">
+                        <h2 id="workProducts" class = "workProducts text-center" >Work products</h2>
                     </div>
-                    <div class="workBox">
-                        <a href="https://executorkarthan.github.io/Work-Day-Scheduler/"> <img class="workImage" src="./assets/Work Day Scheduler - color changes.gif" alt="This is an image of a man kneeling at a high-tech forge creating software code"></a>
-                        <h4>This is a Work Day Scheduler to help you keep your appointments in order. It will change colors based on the time of day to display what appointments are past, 
-                            present and upcoming. It also saves your inputted values to local storage.</h4>
+                    <div class="col">
+                        <a href="https://github.com/ExecutorKarthan/Worth-the-Watch"> <img class="workImage" src="./assets/WorththeWatch.gif.gif" alt="This is a gif showing the movie review site my team and I built"></a>
+                            <h4>
+                                This is a movie review site that my team and I produced as a project. 
+                                It will allow a user to create a username and password, then search the movie database for movies and their corresponding reviews.
+                                The user can then add their own reviews to movie in the database, add movies to review manually or query an API to add movies to review
+                                in an automated fashion.
+                            </h4>
                     </div>
-                    <div class="workBox">
-                        <a href="https://executorkarthan.github.io/Responsive-Quiz/"> <img class="workImage" src="./assets/Responsive Quiz Demo.gif" alt="This is a gif showing the responsive quiz I built"></a>
-                        <h4>This is a responsive quiz that lets the user practice code fundamentals. It can be expanded for deeper understanding.</h4>
-                    </div>
-                    <div class="workBox">
-                        <a href="https://executorkarthan.github.io/Password-Generator/"> <img class="workImage" src="./assets/Password-Generator-Demo.gif" alt="This is a gif showing a password generator that I made"></a>
-                        <h4>This is a password generator that takes user input to create a random password based on user criterion.</h4>
-                    </div>
-                    <div class="workBox">
-                        <a href="link to be added as I produce workable code"> <img class="workImage" src="./assets/Codeforge 2.png" alt="This is an image of a man kneeling at a high-tech forge creating software code"></a>
-                        <h4>Project inbound soon! Please check back later.</h4>
-                    </div>
+                </section>
+                <section class="row">
+                            <div class="workBox">
+                                <a href="https://github.com/ExecutorKarthan/SQL-Employee-Manager"> <img class="workImage" src="./assets/SQL-Manager-Demo.gif" alt="This is a gif showing the command line database manager I made"></a>
+                                <h4>
+                                    This is a command line app that uses several SQL tables that all interact with each other. It allows the user to 
+                                    add employees, change their roles and supervisors, add departments and more!
+                                </h4>
+                            </div>
+                            <div class="workBox">
+                                <a href="https://github.com/ExecutorKarthan/SVG-Logo-Maker"> <img class="workImage" src="./assets/SVG-Logo-Maker.gif" alt="This is a gif showing the SVG logo maker that I made"></a>
+                                <h4> 
+                                    This is a command line app that creates logos given user input.
+                                </h4>
+                            </div>
+                            <div class="workBox">
+                                <a href="https://executorkarthan.github.io/5-day-forecast/"> <img class="workImage" src="./assets/5-day-Forecast Demo.gif" alt="This is a gif showing the responsive quiz I built"></a>
+                                <h4>
+                                    This is a forecast app. It will provide the current and future weather conditions for a location.
+                                </h4>
+                            </div>
+                            <div class="workBox">
+                                <a href="https://github.com/ExecutorKarthan/sipsync"> <img class="workImage" src="./assets/SipSync Demo Video.gif" alt="This displays an app that helps you pair drink selections to food selections"></a>
+                                <h4>
+                                    This is an app to help people select food and drink parings using two different databases. 
+                                </h4>
+                            </div>
+                            <!-- <div class="workBox">
+                                <a href="https://executorkarthan.github.io/Work-Day-Scheduler/"> <img class="workImage" src="./assets/Work Day Scheduler - color changes.gif" alt="This is an image of a man kneeling at a high-tech forge creating software code"></a>
+                                <h4>
+                                    This is a Work Day Scheduler to help you keep your appointments in order. It will change colors based on the time of day to display what appointments are past, 
+                                    present and upcoming. It also saves your inputted values to local storage.
+                                </h4>
+                            </div>
+                            <div class="workBox">
+                                <a href="https://executorkarthan.github.io/Responsive-Quiz/"> <img class="workImage" src="./assets/Responsive Quiz Demo.gif" alt="This is a gif showing the responsive quiz I built"></a>
+                                <h4>
+                                    This is a responsive quiz that lets the user practice code fundamentals. It can be expanded for deeper understanding.
+                                </h4>
+                            </div>
+                            <div class="workBox">
+                                <a href="https://executorkarthan.github.io/Password-Generator/"> <img class="workImage" src="./assets/Password-Generator-Demo.gif" alt="This is a gif showing a password generator that I made"></a>
+                                <h4>
+                                    This is a password generator that takes user input to create a random password based on user criterion.
+                                </h4>
+                            </div>
+                            <div class="workBox">
+                                <a href="link to be added as I produce workable code"> <img class="workImage" src="./assets/Codeforge 2.png" alt="This is an image of a man kneeling at a high-tech forge creating software code"></a>
+                                <h4>
+                                    Project inbound soon! Please check back later.
+                                </h4>
+                            </div> -->
                 </section>
             </section>
             <section>
             <!--Create a bottom section for contact information-->
                 <h2 id="contactMe">Contact Me</h2>
-                <section class="contactLinks">
-                    <a class="emailToolTip" href="mailto:me@alexmessina.dev"> <img class="contactImage" src="assets/email image.png" alt="This is an icon of a letter representing email"></a>
-                    <a class="githubToolTip" href="https://github.com/ExecutorKarthan"> <img class="contactImage" src="assets/github-icon-design-vector-png_115671.png" alt="This is an icon of the octocat - the symbol of Github"></a>
-                    <a class="linkedInToolTip" href="https://www.linkedin.com/in/joseph-messina-36503049/"><img class="contactImage" src="assets/linkedInIcon.png" alt="'This is an icon of 'IN' which is the symbol for LinkedIn"></a>
+                <section class="container-fluid contactLinks">
+                    <div class="row">
+                        <div class="col" id="email">
+                            <a class="emailToolTip" href="mailto:me@alexmessina.dev"> <img class="contactImage" src="assets/email image.png" alt="This is an icon of a letter representing email" id="email"></a>
+                            <a class="contactLink" href="mailto:me@alexmessina.dev">me@alexmessina.dev</a>
+                        </div>
+                        <div class="col" id="gitHub">
+                            <a class="githubToolTip" href="https://github.com/ExecutorKarthan"> <img class="contactImage" src="assets/github-icon-design-vector-png_115671.png" alt="This is an icon of the octocat - the symbol of Github"></a>
+                            <a class="contactLink" href="https://github.com/ExecutorKarthan">https://github.com/ExecutorKarthan</a>
+                        </div>
+                        <div class="col" id="linkedIn">
+                            <a class="linkedInToolTip" href="https://www.linkedin.com/in/joseph-messina-36503049/"><img class="contactImage" src="assets/linkedInIcon.png" alt="'This is an icon of 'IN' which is the symbol for LinkedIn"></a>
+                            <a class="contactLink" href="https://www.linkedin.com/in/joseph-messina-36503049/">https://www.linkedin.com/in/joseph-messina-36503049/</a>
+                        </div>
+                    </div>
                 </section>
             </section>
         </main>
