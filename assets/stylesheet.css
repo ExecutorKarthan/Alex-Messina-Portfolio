@@ -57,10 +57,6 @@ h3{
     margin: 1%;  
 }
 
-/* .meParagraph{
-    test
-} */
-
 #profilePic{
     max-width: 500px;
     width:100%;
@@ -69,7 +65,7 @@ h3{
     padding: 2%;
 }
 
-h4, .workImage{   
+.workImage{   
     display: flex;
     padding: 1%;
     align-items: center;
@@ -77,6 +73,18 @@ h4, .workImage{
     text-align: center;
     max-width: 75%;  
     font-size: 45%;
+}
+
+.repoLink{
+    word-wrap: break-word;
+}
+
+.workBox, .appDescription{
+    margin-top: 2%;
+}
+
+#appDescription{
+    margin-top: 2%;
 }
 
 /*Stylize the "Contact me" section of the page.*/
