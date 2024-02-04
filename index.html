@@ -9,109 +9,147 @@
     </head>
     <body>
         <!--Welcome the visitor and provide links to places in the portfolio page, including ways to contact me, examples of work as well as my work history-->
-        <header>
-            <h1>J. Alexander Messina (He/Him)</h1>
-            <nav>
-                <a class="navLink" href="#aboutMe">About me</a>
-                <a class="navLink" href="#workProducts">Work products</a>
-                <a class="navLink" href="#contactMe">Contact me</a>
-                <a class="navLink" href="assets/ResumeMessinaJAlexander.pdf"> Resume </a>
-            </nav>
-        </header>
+        <section class="container-fluid">
+            <header class="row">
+                <div class="col text-center">
+                    <h1>J. Alexander Messina (He/Him)</h1>
+                </div>
+                <div class="col text-center">
+                    <nav>
+                        <a class="navLink" href="#aboutMe">About me</a>
+                        <a class="navLink" href="#workProducts">Work products</a>
+                        <a class="navLink" href="#contactMe">Contact me</a>
+                        <a class="navLink" href="assets/ResumeMessinaJAlexander.pdf"> Resume </a>
+                    </nav>
+                </div>
+            </header>
+        </section>
         <main>
-            <h3>Welcome to the portfolio page of Alex Messina (He/Him)</h3>
+            <section class="container-fluid">
+                <header class="row">
+                    <h3>Welcome to the portfolio page of Alex Messina (He/Him)</h3>
+                </header>
+            </section>
             <!--Provide a description of who I am (personal statement)-->          
             <section class="containerifluid aboutMe">
                 <div class="row">
                     <h2 class ="text-center" id="aboutMe">About me</h2>
-                    <p class="text-wrap">
+                    <p class="text-wrap" id="meParagraph">
                         <img class="float-end" id="profilePic" src="assets/JapanSelfie.png" alt="This is a photo of a man in a blue kimono surrounded by hanging japanese flowers.">
                         Hello! My name is Alex Messina and I am an inquisitive, life-long learner that enjoys exploring challenges.
                         I am a firm believer in honest self-reflection as a path to improvement and view criticism as an opportunity to engage in that 
                         self-reflection. I think that collaboration is the ideal tool to produce the best quality product as it allows for a larger body 
                         of knowledge and unique perspectives to be applied to the problem in question. 
-                    </p>
-                </div>
-                <div class= "row">
-                    <p> I tend to spend my free time programming to help someone make a repetitive, tedious task doable faster. At the moment, I do not have much 
+                        <br>
+                        <br>
+                        I tend to spend my free time programming to help someone make a repetitive, tedious task doable faster. At the moment, I do not have much 
                         free time as I am currently working toward completing my Web Developer Boot Camp through Washington University - St. Louis. I have leveraged 
                         what I am learning to produce the projects that you see below, as well as more you can find on my GithHub page.
                     </p>
                 </div>
             </section>
             <!-- Create a section to exhibit my different work products-->
-            <section class="containerifluid ">
+            <section class="container-fluid ">
                 <section class="row">
-                    <div class="col text-center">
-                        <h2 id="workProducts" class = "workProducts text-center" >Work products</h2>
-                    </div>
-                    <div class="col">
-                        <a href="https://github.com/ExecutorKarthan/Worth-the-Watch"> <img class="workImage" src="./assets/WorththeWatch.gif.gif" alt="This is a gif showing the movie review site my team and I built"></a>
-                            <h4>
+                    <h2 id="workProducts" class = "workProducts text-center" >Work products</h2>
+                </section>
+                <section class="row">
+                    <div class="workBox">
+                        <div class="row"><img class="mx-auto d-block workImage" src="./assets/WorththeWatch.gif" alt="This is a gif showing the movie review site I made with my team"></div>
+                        <div class="row"><a class="text-center repoLink" href="https://github.com/ExecutorKarthan/Worth-the-Watch"> https://github.com/ExecutorKarthan/Worth-the-Watch</a></div>
+                        <div class="row">
+                            <p>
                                 This is a movie review site that my team and I produced as a project. 
                                 It will allow a user to create a username and password, then search the movie database for movies and their corresponding reviews.
                                 The user can then add their own reviews to movie in the database, add movies to review manually or query an API to add movies to review
                                 in an automated fashion.
-                            </h4>
+                            </p>
+                            <p> 
+                                <u><strong>Programming Concepts:</strong></u> Model-View-Controller, Routing, HTML templating, API, Tokenization, SQL Modeling
+                            </p>
+                            <p>
+                                <u><strong>Technologies used:</strong></u> HTML, CSS, Bootstrap, MySQL, Bcrypt, Session, Dotenv, 
+                                Express, Handlebars, Sequelize, Mysql2, The Movie DB API
+                            </p>
+                        </div>
                     </div>
                 </section>
                 <section class="row">
-                            <div class="workBox">
-                                <a href="https://github.com/ExecutorKarthan/SQL-Employee-Manager"> <img class="workImage" src="./assets/SQL-Manager-Demo.gif" alt="This is a gif showing the command line database manager I made"></a>
-                                <h4>
-                                    This is a command line app that uses several SQL tables that all interact with each other. It allows the user to 
-                                    add employees, change their roles and supervisors, add departments and more!
-                                </h4>
-                            </div>
-                            <div class="workBox">
-                                <a href="https://github.com/ExecutorKarthan/SVG-Logo-Maker"> <img class="workImage" src="./assets/SVG-Logo-Maker.gif" alt="This is a gif showing the SVG logo maker that I made"></a>
-                                <h4> 
-                                    This is a command line app that creates logos given user input.
-                                </h4>
-                            </div>
-                            <div class="workBox">
-                                <a href="https://executorkarthan.github.io/5-day-forecast/"> <img class="workImage" src="./assets/5-day-Forecast Demo.gif" alt="This is a gif showing the responsive quiz I built"></a>
-                                <h4>
-                                    This is a forecast app. It will provide the current and future weather conditions for a location.
-                                </h4>
-                            </div>
-                            <div class="workBox">
-                                <a href="https://github.com/ExecutorKarthan/sipsync"> <img class="workImage" src="./assets/SipSync Demo Video.gif" alt="This displays an app that helps you pair drink selections to food selections"></a>
-                                <h4>
-                                    This is an app to help people select food and drink parings using two different databases. 
-                                </h4>
-                            </div>
-                            <!-- <div class="workBox">
-                                <a href="https://executorkarthan.github.io/Work-Day-Scheduler/"> <img class="workImage" src="./assets/Work Day Scheduler - color changes.gif" alt="This is an image of a man kneeling at a high-tech forge creating software code"></a>
-                                <h4>
-                                    This is a Work Day Scheduler to help you keep your appointments in order. It will change colors based on the time of day to display what appointments are past, 
-                                    present and upcoming. It also saves your inputted values to local storage.
-                                </h4>
-                            </div>
-                            <div class="workBox">
-                                <a href="https://executorkarthan.github.io/Responsive-Quiz/"> <img class="workImage" src="./assets/Responsive Quiz Demo.gif" alt="This is a gif showing the responsive quiz I built"></a>
-                                <h4>
-                                    This is a responsive quiz that lets the user practice code fundamentals. It can be expanded for deeper understanding.
-                                </h4>
-                            </div>
-                            <div class="workBox">
-                                <a href="https://executorkarthan.github.io/Password-Generator/"> <img class="workImage" src="./assets/Password-Generator-Demo.gif" alt="This is a gif showing a password generator that I made"></a>
-                                <h4>
-                                    This is a password generator that takes user input to create a random password based on user criterion.
-                                </h4>
-                            </div>
-                            <div class="workBox">
-                                <a href="link to be added as I produce workable code"> <img class="workImage" src="./assets/Codeforge 2.png" alt="This is an image of a man kneeling at a high-tech forge creating software code"></a>
-                                <h4>
-                                    Project inbound soon! Please check back later.
-                                </h4>
-                            </div> -->
+                    <div class="col workBox">
+                        <div class="row"><img class="mx-auto d-block workImage" src="./assets/SQL-Manager-Demo.gif" alt="This is a gif showing the command line database manager I made"> </div>
+                        <div class="row"><a class="text-center repoLink" href="https://github.com/ExecutorKarthan/SQL-Employee-Manager"> https://github.com/ExecutorKarthan/SQL-Employee-Manager</a> </div>
+                        <div class="row">
+                            <p>
+                                This is a command line app that uses several SQL tables that all interact with each other. It allows the user to 
+                                add employees, change their roles and supervisors, add departments and more!
+                            </p>
+                            <p> 
+                                <u><strong>Programming Concepts:</strong></u> SQL Modeling, SQL model association
+                            </p>
+                            <p>
+                                <u><strong>Technologies used:</strong></u> MySQL, Bcrypt, Inquirer, Dotenv, Sequelize, Mysql2
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col workBox">
+                        <div class="row"><img class="mx-auto d-block workImage" src="./assets/SVG-Logo-Maker.gif" alt="This is a gif showing the SVG logo maker that I made"> </div>
+                        <div class="row"><a class="text-center repoLink" href="https://github.com/ExecutorKarthan/SVG-Logo-Maker"> https://github.com/ExecutorKarthan/SVG-Logo-Maker</a></div>
+                        <div class="row">
+                            <p>
+                                This is a command line app that creates logos given user input.
+                            </p>
+                            <p> 
+                                <u><strong>Programming Concepts:</strong></u> SQL Modeling, SQL model association, Responsive Web-pages
+                            </p>
+                            <p>
+                                <u><strong>Technologies used:</strong></u> MySQL, Bcrypt, Inquirer, Dotenv, Sequelize, Mysql2
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col workBox">
+                        <div class="row"><img class="mx-auto d-block workImage" src="./assets/5-day-Forecast Demo.gif" alt="This is a gif showing the responsive quiz I built"></div>
+                        <div class="row"><a class="text-center repoLink" href="https://executorkarthan.github.io/5-day-forecast/">https://executorkarthan.github.io/5-day-forecast/</a></div>
+                        <div class="row">
+                            <p>
+                                This is a responsive forecast app that will check the current weather conditions of a searched city. It will also display the forecasted weather 
+                                conditions in stylized cards below the current day. The app uses local storage to keep track of searched cities, keeping a list of the cities 
+                                below that allows for quick data retrieval.
+                            </p>
+                            <p> 
+                                <u><strong>Programming Concepts:</strong></u> User Responsive Web-pages, API interaction, Local storage, Fetch Requests
+                            </p>
+                            <p>
+                                <u><strong>Technologies used:</strong></u> Javascript, OpenWeather, HTML, CSS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col workBox">
+                        <div class="row"><img class="mx-auto d-block workImage" src="./assets/SipSync Demo Video.gif" alt="This displays an app that helps you pair drink selections to food selections"></div>
+                        <div class="row"><a class="text-center repoLink" href="https://github.com/ExecutorKarthan/sipsync"> https://github.com/ExecutorKarthan/sipsync</a></div>
+                        <div class="row">
+                            <p>
+                                This was a meal-drink paring website that my team and I put together as a project.It allows the user to select an alcohol type or drink type 
+                                or meal category, then the algorithm would fetch a list of possible pairings for the requested item(s). It supports multiple category selections, 
+                                adjusting its search to match the additional criterion. 
+                            </p>
+                            <p> 
+                                <u><strong>Programming Concepts:</strong></u> Recursion, Local storage, HTML, CSS, API interaction, Fetch requests, User Responsive Web-pages
+                            </p>
+                            <p>
+                                <u><strong>Technologies used:</strong></u> Javascript, The Cocktail Database, The Meal Database, Tailwind, CSS, HTML
+                            </p>
+                        </div>
+                    </div>
                 </section>
             </section>
             <section>
             <!--Create a bottom section for contact information-->
-                <h2 id="contactMe">Contact Me</h2>
                 <section class="container-fluid contactLinks">
+                    <div class="row">
+                        <h2 id="contactMe">Contact Me</h2>
+                    </div>
                     <div class="row">
                         <div class="col" id="email">
                             <a class="emailToolTip" href="mailto:me@alexmessina.dev"> <img class="contactImage" src="assets/email image.png" alt="This is an icon of a letter representing email" id="email"></a>
@@ -128,10 +166,10 @@
                     </div>
                 </section>
             </section>
+            <footer>
+                <!--Add a copyright statement to protect Intellectual Property-->
+                <p> Copyright Alex Messina</p>
+            </footer>
         </main>
-        <footer>
-        <!--Add a copyright statement to protect Intellectual Property-->
-            <p> Copyright Alex Messina</p>
-        </footer>
     </body>
 </html>

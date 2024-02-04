@@ -2,19 +2,13 @@
 *{
     padding: 0px;
     margin: 0px;
-    background-color: plum;
+    background-color: #D8BFD8;
     box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
 }
 
-/*Make the header a flex box with two other flex boxes in it - one containing the headline name and the other a box to hold the navigation links. 
-This is done to allow the navigation links to collapse under the portfolio title name.*/
-header {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0%;
-}
+body {overflow-x: hidden;}
 
 /*Formate the elements of the heard to be ascetically pleasing.*/
 h1 {
@@ -41,7 +35,7 @@ nav {
     font-size: 75%;
 }
 
-h3, #contactMe,footer{
+#contactMe,footer{
     display: flex;
     justify-content: center;
     font-size:150%;
@@ -57,18 +51,15 @@ h3{
     text-align: center;
 }
 
-/*Create a series of flexboxes to help the "about me" elements so they will collapse or expand as the page changes size. */
+/*Stylize the "About me" section of the page.*/
 .aboutMe{
     width: 100%;
     margin: 1%;  
 }
 
-/*Stylize the "About me" section of the page.*/
-#title{
-    min-width: 5%;
-    text-align: left;
-    padding-top: 5%;
-}
+/* .meParagraph{
+    test
+} */
 
 #profilePic{
     max-width: 500px;
@@ -78,56 +69,17 @@ h3{
     padding: 2%;
 }
 
-.meParagraph{
-    width: 50%;
-    padding-top: 4%;
-    text-align: justify;
-    width: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
-    font-size: small;
-}
-
-/*Create a series of flexboxes to help the "works" elements so they will collapse or expand as the page changes size. */
-.workSection, .boxPallet{
+h4, .workImage{   
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#workProducts{
-    width: 100%;
-    text-align: center;
-    padding-top: 3%;
-    padding-left: 30%;
-}
-
-/*Stylize the "Work" section of the page, where someone can view my future completed coding projects.*/
-.workBox{
-    display: flex;
+    padding: 1%;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 5%;
-    margin: 2%; 
-    width: 40%;  
-}
-
-h4, .workImage{   
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     max-width: 75%;  
     font-size: 45%;
 }
 
-#firstProject{
-    padding-top: 5%;
-    width: 100%;
-}
-
-/*Create flexboxes and stylize the "Contact me" section of the page.*/
+/*Stylize the "Contact me" section of the page.*/
 .contactLinks {
     min-width: 100%;
     padding-right: 3%;
@@ -149,7 +101,7 @@ h4, .workImage{
     padding-left: 1%;
 }
 
-.contactLink{
+.contactLink, .repoLink{
     font-size: 18px;
     color: black;
 }
@@ -183,70 +135,10 @@ h4, .workImage{
         flex-direction: row;
         justify-content: space-between;
     }
-    
-    h1{
-        font-size: 155%;        
-    }
-    
-    nav{
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 40%;
-    }
 
     .navLink{       
         font-size: 80%;
         width: fit-content;
         padding: 3%;
-    }
-
-    h3{
-        margin: 0%;
-        font-size: 125%;
-    }
-
-    h2{
-        align-items: center;
-        font-size: 150%;
-    }
-
-    #profilePic{
-        max-width: 500px;
-    }
-
-    .meParagraph{
-        width: 40%;
-        font-size: 150%;
-    }
-
-    #workProducts{
-        width: 15%;
-        text-align: center;
-        align-items: center;
-        font-size: 150%;
-        margin: 4%;
-    }
-
-    .boxPallet{
-        width:75%;
-    }
-
-    .workBox{
-        width: 25%;
-        padding: 0%;
-        margin: 0%;
-    }
-
-    #firstProject img{
-        width: 40%;
-    }
-
-    #firstProject h4{
-        padding-right: 1%;
-        padding-bottom: 5%;
-    }
-    
-    #contactMe{
-        padding-top: 5%;
     }
 }
